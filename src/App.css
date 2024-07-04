@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+form {
+  padding: 30px;
+  border-radius: 8px;
+  border-color: rgb(198, 202, 206);
+  border-style: solid;
+  border-width: thin;
+
+  width: 250px;
+
+  height: 150px;
+  position: relative;
+}
+
+.form-div {
+  display: grid;
+  justify-content: flex-start;
+  justify-items: start;
+  width: 100%;
+  font-family: "Wittgenstein", serif;
+
+  gap: 1rem;
+}
+
+h1 {
+  color: rgb(0, 136, 255);
+  margin: 0;
+  font-weight: 100;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+
+  justify-items: start;
+  width: 100%;
+}
+
+.text {
+  font-weight: 600;
+  margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  width: 250px;
+  border-radius: 6px;
+  border-width: thin;
+  border-style: solid;
+  border-color: rgb(198, 202, 206);
+}
+
+button {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  background-color: white;
+  color: rgb(0, 136, 255);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  border-width: medium;
+  border-style: solid;
+  border-color: rgb(0, 136, 255);
+  transition: background-color 0.9s, color 0.9s;
+}
+
+button:hover {
+  background-color: rgb(0, 136, 255);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  font-size: 10px;
+  color: red;
 }
